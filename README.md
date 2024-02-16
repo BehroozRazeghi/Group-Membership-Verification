@@ -1,2 +1,1 @@
-# Group-Membership-Verification
-Group Membership Verification via Nonlinear Sparsifying Transform Learning
+# Group Membership Verification via Nonlinear Sparsifying Transform Learning
