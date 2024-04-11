@@ -3,15 +3,15 @@
 
 ## File Descriptions
 - `AUC.m`: Computes the Area Under the Curve (AUC) for model evaluation.
-- `ComputeScores.m`: Calculates scores using predefined weights, transformations, and parameters.
-- `NLTransRepLearn.m`: Main function to learn nonlinear transformative representations.
-- `Perf_NLTR.m`: Evaluates performance metrics for identification and verification processes.
-- `PosNeg.m`: Utility function to adjust matrix elements based on positivity or negativity.
-- `UnitNorm.m`: Normalizes matrices to unit length.
-- `UpdateTheta.m`: Updates parameters theta based on the current state.
-- `UpdateW.m`: Adjusts transformation matrix W as per optimization algorithms.
-- `UpdateY.m`: Updates representations and group assignments.
-- `partition.m`: Partitions data into clusters based on specified methods.
+- `ComputeScores.m`: Computes discriminative scores used for group assignment and verification
+- `NLTransRepLearn.m`: Main function to learn nonlinear transform representations.
+- `Perf_NLTR.m`: Script to evaluate performance metrics including false positive and true positive rates for both identification and verification processes across datasets.
+- `PosNeg.m`: Utility function to apply positive and negative transformations.
+- `UnitNorm.m`: Normalizes matrix columns to unit length.
+- `UpdateTheta.m`: Updates the theta parameters (similarity and dissimilarity measures) according to the latest data representations.
+- `UpdateW.m`: Updates the transform matrix W based on current estimates.
+- `UpdateY.m`: Updates the representations Y and group assignments.
+- `partition.m`: Partitions data into groups.
 - `test_CFP.m` & `test_LFW.m`: Scripts to test the framework on CFP and LFW datasets respectively.
 
 ## Installation
@@ -24,12 +24,14 @@
 Clone this repository to your local machine using:
 ```bash
 git clone https://github.com/BehroozRazeghi/Group-Membership-Verification.git
+```
+Navigate to the cloned directory:
+```bash
 cd Group-Membership-Verification
 ```
 
 ## Usage
-To use the GMV-NSTL framework, perform tests on your datasets using the provided scripts. 
-Here’s how to run these tests in MATLAB:
+To run the GMV-NSTL framework, execute the test scripts in MATLAB for the desired dataset:
 ```bash
 run('test_CFP.m');  # For testing on the CFP dataset
 run('test_LFW.m');  # For testing on the LFW dataset
