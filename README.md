@@ -23,7 +23,7 @@
 ### Setup
 Clone this repository to your local machine using:
 ```bash
-git clone https://github.com/your-github-username/Group-Membership-Verification.git
+git clone https://github.com/BehroozRazeghi/Group-Membership-Verification.git
 cd Group-Membership-Verification
 ```
 
